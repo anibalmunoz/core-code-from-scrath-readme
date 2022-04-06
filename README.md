@@ -25,3 +25,5 @@ En respuesta corta es: ambos. Esto se debe a que java compila el código en Byte
 5. PRINT R
 6. END 
 ```
+
+### 4: Aprender sobre lenguajes de alto y bajo nivel
