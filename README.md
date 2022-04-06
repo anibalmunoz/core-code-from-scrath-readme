@@ -9,3 +9,19 @@ Los lenguajes compilados traducen directamente el código y esto hace que el des
 
 Por otra parte los lenguajes interpretados traducen linea por linea cada vez que se ejecutan. Este proceso es mas rápido que compilar todo el programa, pero es mas lento que ejecutar un programa que ya está compilado. Algunos ejemplos Javascript y PHP. Estos lenguajes pueden ser multiplataforma, son faciles de probar y debuggear 
 
+### Pregunta 2 : ¿Java está compilado o interpretado, o ambos?
+
+En respuesta corta es: ambos. Esto se debe a que java compila el código en ByteCode y luego este código puede ser interpretado por las Java Virtual Machine en cualquier sistema operativo.
+
+### 3: Ejercicio de conversión de moneda de pseudocódigo
+
+`Pseudocódigo para conversión de Dolar USD a Bitcoin BTC`
+
+```
+1. START
+2. A <-- GET
+3. B <-- 0.000023
+4. R <-- A*B
+5. PRINT R
+6. END 
+```
