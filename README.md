@@ -40,3 +40,40 @@ Mi fecha de cumpleaños es 2000, este número en binario se puede convertir faci
  - 1 -  1  -  1  -  1  -  1  -  0  - 1   -  0  - 0   - 0   - 0
      
 De esta manera sumamos cada casilla con su valor para saber donde ubicar los "1" y saber que valores necesitamos ir sumando para obtener nuestro numero requerido. Este es el método que he usado yo siempre, no es muy rápido pero me ha parecido util para entender los binarios.
+
+### 2. MIPS exercise
+
+1. El primer programa que hice se encarga de Sumar 2 números ingresados por el usuario:
+
+```
+    .data
+	      number1: .asciiz "\nIngrese el primer numero: "
+	      number2: .asciiz "\nIngrese el segundo numero: "
+    .text
+	       main:
+              li $v0, 4
+              la $a0, number1
+              syscall
+
+              li $v0, 5
+              syscall
+
+              move $t0, $v0
+
+              li $v0, 4
+              la $a0, number2
+              syscall
+
+              li $v0, 5
+              syscall
+
+              move $t1, $v0
+
+              add $t2, $t0, $t1
+
+              li $v0, 1
+              move $a0, $t2
+              syscall
+```
+
+![alt text](suma2numero.jpg)
