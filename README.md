@@ -91,4 +91,4 @@ De esta manera sumamos cada casilla con su valor para saber donde ubicar los "1"
 
 ```
 
-![alt text]()
+![alt text](https://raw.githubusercontent.com/anibalmunoz/core-code-from-scrath-readme/main/Sesion%202/minombre.jpg)
