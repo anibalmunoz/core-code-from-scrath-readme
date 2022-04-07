@@ -76,4 +76,19 @@ De esta manera sumamos cada casilla con su valor para saber donde ubicar los "1"
               syscall
 ```
 
-![alt text](suma2numero.jpg)
+![alt text](https://raw.githubusercontent.com/anibalmunoz/core-code-from-scrath-readme/main/Sesion%202/suma2numero.jpg)
+
+2. El segundo programa muestra mi nombre cada vez que se ejecuta.
+```
+  .data
+	      result_message: .asciiz "\nMi nombre es Anibal Estuardo Muñoz Hernández "
+  .text
+	      main:
+             
+              li $v0, 4
+              la $a0 result_message
+              syscall             
+
+```
+
+![alt text]()
