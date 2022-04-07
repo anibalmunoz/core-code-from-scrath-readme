@@ -92,3 +92,51 @@ De esta manera sumamos cada casilla con su valor para saber donde ubicar los "1"
 ```
 
 ![alt text](https://raw.githubusercontent.com/anibalmunoz/core-code-from-scrath-readme/main/Sesion%202/minombre.jpg)
+
+## Jueves
+### 1. Print special numbers exercise
+
+En mi casó utilicé el bucle for para poder imprimir los números en consola.
+
+```
+for (let i = 0; i <= 100; i+=2) {
+    console.log(i)
+}
+```
+
+### 2. Bad Code exercise
+
+En este caso el código estaba haciendo lo siguiente `if ((cond=true))` , esto es incorrecto ya que ahí lo que se está haciendo es asignandole true a la variable cond ya que = representa una asignación, una opción correcta sería colocar doble sigo igual `if((cond==true))` ya que el doble igual si representa una comparación. y otra solución es la que yo realicé la cual es la siguiente:
+
+
+```
+var cond = false;
+
+if (cond) {
+  console.log('The cond variable is true');
+} else {
+  console.log('The cond variable is false');
+}
+```
+
+Al colocar unicamente el nombre del booleano, en este caso `cond`, el lenguaje de programación infiere que estamos comprovando su `true`, asi que no hace falta escribir `cond==true`.
+
+### 3. Bad Code 2 exercise
+
+El problema es el siguiente: 
+
+Mi resultado a este problema fue el siguiente.
+
+```
+var n = 100;
+
+if (n == 100) {
+  console.log('This is a special number!');
+} else if (n < 1000 && n % 10 == 0) {
+  console.log('This number is almost special');
+} else {
+  console.log('Just a regular number');
+}
+```
+
+### 4. 
