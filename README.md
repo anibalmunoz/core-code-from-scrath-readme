@@ -37,6 +37,6 @@ Mi fecha de cumpleaños es 2000, este número en binario se puede convertir faci
  - 2^11 - 2^10 - 2^9 - 2^8 - 2^7 - 2^6 - 2^5 - 2^4 - 2^3 - 2^2 - 2^1 - 2^0
  - 2048 - 1024 - 512 - 256 - 128 - 64  - 32  - 16  - 8   - 4   - 2   - 1
 
- -           1 -  1  -  1  -  1  -  1  -  0  - 1   -  0  - 0   - 0   - 0
+ - 1 -  1  -  1  -  1  -  1  -  0  - 1   -  0  - 0   - 0   - 0
      
 De esta manera sumamos cada casilla con su valor para saber donde ubicar los "1" y saber que valores necesitamos ir sumando para obtener nuestro numero requerido. Este es el método que he usado yo siempre, no es muy rápido pero me ha parecido util para entender los binarios.
