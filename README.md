@@ -139,4 +139,11 @@ if (n == 100) {
 }
 ```
 
-### 4. 
+### 4.  Seguir el curso de GIT
+
+
+
+# SEMANA 2
+
+## Lunes
+
