@@ -162,4 +162,65 @@ function multiply(a, b){
 }
 ```
 
-### 2. 
+### 2. ASCII Total
+
+Mi solución es la siguiente:
+
+```
+function uniTotal (string) {
+// total up dem unicodes!
+   let total=0;
+    for (let i = 0; i < string.length; i++) {
+        total = total + string.charCodeAt(i);    
+    }
+
+    return(total);
+}
+```
+
+### 3. Char From ASCII Value
+
+Mi solución es la siguiente:
+
+```
+function getChar(c){
+  // ...
+   let caracter = String.fromCharCode(c);
+    return caracter;
+}
+```
+
+
+### 4. Binary Addition
+
+Mi solución:
+
+```
+function addBinary(a,b) {
+    let suma = a + b;
+    let binario = suma.toString(2);    
+    let respuesta = a + "," + b + " --> " +'"'+ binario + '"' + " (" + a + " + " + b + " = " + suma + " in decimal or " + binario + " in binary)";
+    return respuesta;
+}
+```
+
+### 5. Student's Final Grade
+
+Mi solución es la siguiente:
+
+```
+function finalGrade (exam, projects) {
+   if (exam > 90 || projects > 10) {
+        nota = 100;
+    } else if (exam > 75 && projects >= 5) {
+        nota = 90;
+    } else if (exam > 50 && projects >= 2) {
+        nota = 75;
+    } else {
+        nota = 0;
+    }
+
+    let respuesta = exam + ", " + projects + " --> " + nota;
+    return nota;
+}
+```
