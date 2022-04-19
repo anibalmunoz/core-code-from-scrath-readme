@@ -147,3 +147,19 @@ if (n == 100) {
 
 ## Lunes
 
+CREACIÓN DE CUENTA DE CODEWARS Y LECTURAS SOBRE CONDICIONALES
+
+## Martes
+
+
+### 1. Multiply
+
+Mi solución:
+
+```
+function multiply(a, b){
+  return a * b;
+}
+```
+
+### 2. 
