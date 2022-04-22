@@ -224,3 +224,60 @@ function finalGrade (exam, projects) {
     return nota;
 }
 ```
+
+## Miercoles
+
+### 1. Holiday VIII - Duty Free
+
+Mi resultado fue el siguiente:
+
+```
+function dutyFree(normPrice, discount, hol){
+multiplicador=(normPrice*(discount*0.01));
+resultado=hol / multiplicador;
+  return Math.floor(resultado);
+}
+```
+
+### 2. Twice As Old
+
+Mi solucion es la siguiente:
+
+```
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  // your code here
+  hijo2=sonYearsOld*2;
+  return Math.abs(dadYearsOld-hijo2);
+}
+```
+
+### 3. Valid Spacing
+
+Mi solucion fue la siguiente:
+
+```
+function validSpacing(s) {
+  // write your code here
+   let espacioInicial=false;
+  let espacioFinal=false;
+  
+ 
+
+  if(s[0]==" "){
+    espacioInicial=true;
+  }
+  
+  if(s[s.length-1]==" "){
+    espacioFinal=true;
+  }
+  
+  if(espacioFinal || espacioInicial){
+    return false;
+  }
+  else{
+    return true;
+  }
+}
+```
+
+### 4. 
