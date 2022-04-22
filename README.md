@@ -260,6 +260,7 @@ function validSpacing(s) {
   // write your code here
    let espacioInicial=false;
   let espacioFinal=false;
+  let espacioDoble=false;
   
  
 
@@ -271,7 +272,18 @@ function validSpacing(s) {
     espacioFinal=true;
   }
   
-  if(espacioFinal || espacioInicial){
+    for(let i = 0; i < s.length; i++) {
+    if(s.charAt(i) === ' '){
+      if(i != 0 && s.charAt(i-1) === ' ') {
+        espacioDoble =true;
+      }
+      if(i != (s.length - 1) && s.charAt(i+1) === ' ') {
+        espacioDoble=true;
+      }
+    }
+  }
+  
+  if(espacioFinal || espacioInicial || espacioDoble){
     return false;
   }
   else{
@@ -280,4 +292,121 @@ function validSpacing(s) {
 }
 ```
 
-### 4. 
+
+### 4. Fake Binary
+
+Mi solucion fue la siguiente
+
+```
+function fakeBin(x){
+ let resultado="";
+  
+  for(i=0;i<x.length;i++){
+    if(x[i]<5){
+      resultado += "0";
+    }else if(x[i]>=5){
+      resultado += "1";
+    }
+  }
+  
+  return resultado;
+}
+```
+
+## Jueves
+
+### 1. Remove All Exclamation Marks From The End Of Sentence
+
+Mi solución fue la siguiente
+
+```
+function remove (string) {  
+  
+  let stop;
+  
+  for(let i=string.length-1;i>=0;i--){
+      
+    if(string[i]!="!"){          
+      stop=i+1;
+      break;
+    }
+    
+  }
+ 
+  return string.substring(0,stop);
+}
+```
+
+### 2. Vowel Remover
+
+My solution:
+
+```
+function shortcut (string) {
+  
+  let resultado="";
+  
+  for(let i=0;i<string.length;i++){
+    
+  if(string[i]=="a" || string[i]=="e" || string[i]=="i" || string[i]=="o" || string[i]=="u"){
+    continue;  
+  }else{
+    resultado += string[i];
+  }
+      
+  }
+  
+  return resultado;
+}
+```
+
+### 3. Rock Paper Scissors!
+
+My solution:
+
+```
+const rps = (p1, p2) => {
+    if(p1=="scissors" && p2=="paper"){
+    return "Player 1 won!";
+  }
+  if(p1=="scissors" && p2=="rock"){
+    return "Player 2 won!";
+  }
+  
+   if(p1=="paper" && p2=="scissors"){
+    return "Player 2 won!";
+  }
+  if(p1=="paper" && p2=="rock"){
+    return "Player 1 won!";
+  }
+  
+    if(p1=="rock" && p2=="scissors"){
+    return "Player 1 won!";
+  }
+  if(p1=="rock" && p2=="paper"){
+    return "Player 2 won!";
+  }
+  
+  if(p1==p2){
+    return "Draw!";
+  }
+};
+```
+
+### 4. Persistent Bugger
+
+My solution:
+
+```
+function persistence(num) {
+  if (num.toString().length === 1) {
+    return 0;
+  }
+  var mult = 1;
+  var splitStr = num.toString().split("");
+  for (var i = 0; i < splitStr.length; i++) {
+    mult *= parseFloat(splitStr[i])
+  }
+  return 1 + persistence(parseFloat(mult));
+}
+```
